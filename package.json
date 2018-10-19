@@ -1,0 +1,20 @@
+{
+  "name": "polymer-code-highlighter",
+  "description": "Performs code highlighting on the body of the element",
+  "main": "code-highlighter.js",
+  "license": "BSD-3-Clause",
+  "author": "vrawat79",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrawat79/code-highlighter.git"
+  },
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.2"
+  }
+}
