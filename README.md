@@ -86,3 +86,5 @@ window.customElements.define('my-view2', MyView2);
 
 ```
 
+## Limitations
+1. Currently supports highlighting for Java Code snippets only. 
