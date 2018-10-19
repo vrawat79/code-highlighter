@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/polymer-code-highlighter.svg)](https://badge.fury.io/js/polymer-code-highlighter)  [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/polymer-code-highlighter)
+
+
 # \<code-highlighter\>
 
 Performs code highlighting on the body of the element
