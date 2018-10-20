@@ -3,7 +3,7 @@
 
 # \<code-highlighter\>
 
-Performs code highlighting on the body of the element.
+Performs code highlighting on the body of the element. Useful when Source Code (e.g. Java Code) needs to be rendered as part of View. 
 
 Demo of how this works is available [here](https://www.webcomponents.org/element/polymer-code-highlighter/demo/demo/index.html)
 
@@ -15,12 +15,12 @@ First, make sure you have the npm (packaged with [Node.js](https://nodejs.org)) 
 
 Run `sudo npm install --save polymer-code-highlighter` to install the Code-Highlighter webcomponent.
 
-## Using in a HTML file
+## How to use in a HTML file
 In the HTML file, please do following:
 1. Add the script tag to get the code-highlighter.js.
 2. Add the <code-highlighter lang="java"> tag to highlight the sample code. 
 
-```
+``` html
 <!-- #1. Get the code-highlighter.js -->
 <script type="module" src="node_modules/polymer-code-highlighter/code-highlighter.js"></script>
    
@@ -28,7 +28,8 @@ In the HTML file, please do following:
     <div>
       <h3>Basic code-highlighter demo</h3>      
       <!-- #2. Add the tag -->
-          <code-highlighter lang="java">
+          <code-highlighter lang="java">   
+            <!-- java code to be highlighted -->
             class Person {
               private firstName = "Vikram";
               private lastName = "Rawat";
@@ -47,12 +48,12 @@ In the HTML file, please do following:
     
 ```    
 
-## Using in a Custom Polymer Element
+## How to use in a Custom Polymer 3 Element
 In the custom element js file, please do following:
 1. Import the code-highlighter.js
 2. Add the <code-highlighter lang="java"> tag to highlight the sample code.
 
-```
+``` js
 import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import './shared-styles.js';
 
