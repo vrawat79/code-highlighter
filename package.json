@@ -4,7 +4,7 @@
   "main": "code-highlighter.js",
   "license": "BSD-3-Clause",
   "author": "vrawat79",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/vrawat79/code-highlighter.git"
