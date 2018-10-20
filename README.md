@@ -3,7 +3,9 @@
 
 # \<code-highlighter\>
 
-Performs code highlighting on the body of the element
+Performs code highlighting on the body of the element.
+
+Demo of how this works is available [here](https://www.webcomponents.org/element/polymer-code-highlighter/demo/demo/index.html)
 
 ## Pre-requisite
 
@@ -86,3 +88,5 @@ window.customElements.define('my-view2', MyView2);
 
 ```
 
+## Limitations
+1. Currently supports highlighting for Java Code snippets only. 
