@@ -5,6 +5,14 @@
   "license": "BSD-3-Clause",
   "author": "vrawat79",
   "version": "1.0.2",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "polymer3",
+    "code highlighter",
+    "java code highlighter",
+    "syntax highlighter"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/vrawat79/code-highlighter.git"
