@@ -22,14 +22,22 @@ class CodeHighlighter extends PolymerElement {
   processData((this));
 
     function processData(data) {
+      
     console.log(data);
+    // alert(data.innerHTML);
+    // var trimmedData = (data.innerHTML).trim();
+    var trimmedData = (data.innerHTML);
+
+    // alert(trimmedData);
 
       var formattedString;
       if (data.lang == 'java') {
         console.log('java lang styling needed!!');
         //parse inner HTML for keywords and change coloring scheme
-          formattedString = "<pre><code>".concat(data.innerHTML.replace(/class/g, "<span class='keyword'>class</span>"));
+          formattedString = "<pre><code id='vrContent'>".concat(trimmedData.replace(/class/g, "<span class='keyword'>class</span>"));
+          formattedString=formattedString.trim();
                 formattedString = formattedString.replace(/private/g, "<span class='keyword'>private</span>");
+                // alert(formattedString);
                 formattedString = formattedString.replace(/public/g, "<span class='keyword'>public</span>");
                 formattedString = formattedString.replace(/return/g, "<span class='keyword'>return</span>");
                 formattedString = formattedString.replace(/for/g, "<span class='keyword'>for</span>");
@@ -43,13 +51,13 @@ class CodeHighlighter extends PolymerElement {
                 formattedString = formattedString.concat("</code></pre>");
 
       }else{
-        formattedString = "<pre>".concat(data.innerHTML).concat("</pre>");
+        formattedString = "<pre>".concat(trimmedData).concat("</pre>");
       }
-      data.innerHTML = "<style>pre,code{background-color: gainsboro}.keyword{color: red;}.quotes{color: blue;}</style>".concat(formattedString);
+      data.innerHTML = "<style>pre,code{background-color: gainsboro;}.keyword{color: red;}.quotes{color: blue;}@media (max-width: 500px){#vrContent{font-size:12px;}}@media (max-width: 500px){#vrContent{font-size:8px;}}</style>".concat(formattedString);
     //   data.innerHTML = formattedString;
       
       console.log(data.innerHTML);
-      
+      // alert(data.innerHTML);
     }
  }  
 }
